@@ -1,0 +1,4 @@
+list all installed hotfixes 
+Get-CimInstance -ClassName Win32_QuickFixEngineering
+list all installed hotfixes - Just KBs
+Get-CimInstance -ClassName Win32_QuickFixEngineering -Property HotFixId | Select-Object -Property HotFixId
